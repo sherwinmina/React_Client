@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Header extends Component {
   render() {
-    retun (
+    return (
       <nav className="navbar navbar-light">
         <ul className="nav navbar-nav">
           <li className="nav-item">
@@ -13,6 +13,5 @@ class Header extends Component {
     );
   }
 }
-
 
 export default Header;
