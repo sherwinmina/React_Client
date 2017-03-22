@@ -1,5 +1,7 @@
 
 
-export function signinUser({email, password }) {
-  
+export function signinUser({ email, password }) {
+  return function(dispatch) {
+    
+  }
 }
