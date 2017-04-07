@@ -21,6 +21,7 @@ class Signup extends Component {
         <label htmlFor="">Confirm Password:</label>
         <input type="text" className="form-control" {...passwordConfirm} />
       </fieldset>
+      <button action="submit" className="btn btn-primary">Sign up</button>
     </form>
     );
   }
