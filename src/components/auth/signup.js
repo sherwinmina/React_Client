@@ -2,13 +2,19 @@ import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
 import * as actions from '../../actions';
 
-i
+
 class Signup extends Component {
+  handleSubmit(formProps) {
+    // call action creator to signup user!
+    this.props.signupUser(formProps);
+  }
+
+
   render () {
     const { handleSubmit, fields: {email, password, passwordConfirm}} = this.props;
 
     return (
-    <form >
+    <form onSubmit={handleSubmit(this.handleSubmit.bin(this))}>
       <fieldset className="form-group">
         <label htmlFor="">Email</label>
         <input type="text" className="form-control" {...email} />
