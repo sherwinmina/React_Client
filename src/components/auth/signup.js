@@ -70,7 +70,7 @@ function validate(formProps) {
 }
 
 function mapStateToProps(state){
-  return { errorMessage: state.auth.error }
+  return { errorMessage: state.auth.error };
 }
 
 export default reduxForm({
