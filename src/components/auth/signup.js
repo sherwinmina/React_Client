@@ -13,6 +13,14 @@ class Signup extends Component {
         <label htmlFor="">Email</label>
         <input type="text" className="form-control" {...email} />
       </fieldset>
+      <fieldset className="form-group">
+        <label htmlFor="">Password:</label>
+        <input type="text" className="form-control" {...password} />
+      </fieldset>
+      <fieldset className="form-group">
+        <label htmlFor="">Confirm Password:</label>
+        <input type="text" className="form-control" {...passwordConfirm} />
+      </fieldset>
     </form>
     );
   }
