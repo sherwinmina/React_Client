@@ -4,9 +4,17 @@ import { Link } from 'react-router';
 
 class Header extends Component {
   renderLinks() {
-    <li className="nav-item">
+    if (this.props.authenticated) {
+      // show a Link to log out
+      <li className="nav-item">
+        <Link className="nav-link" to="/signout"></Link>
+      </li>
+    } else {
+      // Show a link to sign in or sign out
+       <li className="nav-item">
           Sign in
     </li>
+    }
   }
 
   render() {
