@@ -4,7 +4,7 @@ import * as actions from '../../actions';
 
 
 class Signup extends Component {
-  handleSubmit(formProps) {
+  handleFormSubmit(formProps) {
     // call action creator to signup user!
     this.props.signupUser(formProps);
   }
@@ -62,4 +62,4 @@ export default reduxForm({
   form: 'signup',
   fields: ['email', 'password', 'passwordConfirm'],
   validate
-})(Signup);
+}, null, actions)(Signup);
