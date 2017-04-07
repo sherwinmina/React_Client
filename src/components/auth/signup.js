@@ -13,4 +13,7 @@ class Signup extends Component {
   }
 }
 
-export default Signup;
+export default reduxForm({
+  form: 'signup',
+  fields: ['email', 'password', 'passwordConfirma']
+})(Signup);
