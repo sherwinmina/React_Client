@@ -12,6 +12,7 @@ class Signup extends Component {
       <fieldset className="form-group">
         <label htmlFor="">Email</label>
         <input type="text" className="form-control" {...email} />
+        {email.touch && email.error && <div className="error">{email.error}</div>}
       </fieldset>
       <fieldset className="form-group">
         <label htmlFor="">Password:</label>
@@ -21,6 +22,7 @@ class Signup extends Component {
       <fieldset className="form-group">
         <label htmlFor="">Confirm Password:</label>
         <input type="text" className="form-control" {...passwordConfirm} type="password" />
+         {passwordConfirm.touch && passwordConfirm.error && <div className="error">{passwordConfirm.error}</div>}
       </fieldset>
       <button action="submit" className="btn btn-primary">Sign up</button>
     </form>
