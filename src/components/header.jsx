@@ -11,9 +11,14 @@ class Header extends Component {
       </li>
     } else {
       // Show a link to sign in or sign out
-       <li className="nav-item">
-          Sign in
-    </li>
+      return [
+        <li className="nav-item">
+           <Link className="nav-link" to="/signin">Sign In</Link>
+        </li>,
+        <li className="nav-item">
+          <Link className="nav-link" to="/signup">Sign Up</Link>
+        </li>
+      ];
     }
   }
 
