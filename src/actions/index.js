@@ -64,7 +64,7 @@ export function fetchMessage() {
       .then(response => {
         dispatch({
           type: FETCH_MESSAGE,
-          payload: action.payload.data.message
+          payload: response.data.message
         });
       });
   }
